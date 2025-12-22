@@ -9,6 +9,7 @@
 body{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 
@@ -247,9 +248,11 @@ main p{
 }
 
 .card-img-top {
-  height: 300px;
+  height: 240px;
   object-fit: cover;
 }
+
+
 
 
 /*---------------------COMIENZO EMPRENDEDORES-----------------------------*/
@@ -337,15 +340,27 @@ h1{
 
     /*---------------------COMIENZO COLECCION-----------------------------*/
 
-
+.card-img-collecion {  
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;    
+}
+.coleccion{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;  
+    gap: 4px;
+}
 .main coleccion{
+
     display: flex;
     align-items: center;        /* centra verticalmente el contenido (ajustable) */
-    justify-content: space-between; /* texto a la izquierda, imagen a la derecha */
-    padding: 0 1%;
     height: 80%;
     width:auto;
     position: relative;
+    flex: 1;
+
 
     background-image: url("../Imagenes/fondo-inicio.jpg");
     background-position: center;
@@ -353,94 +368,8 @@ h1{
     background-size: cover;
 }
 
-
-    /*IMAGENES ROPA*/
-    .ropa-coleccion{
-        width: 40%;
-        max-width: 200px;
-        background-position: 60% bottom;
-        text-align: center;
-        background-position: relative;
-    }
-    .ropa-coleccion img{
-        height: 40vh;
-        background-position: 60% bottom;
-
-    }
-       
-    .ropa-coleccion p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-
-      /*IMAGENES ACCESORIOS*/
-    .accesorios-coleccion{  
-        text-align: center;
-    }
-    .accesorios-coleccion img{
-        height: 40vh;
-        background-position: 60% bottom;
-    }
-       
-    .accesorios-coleccion p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-
-
-      /*IMAGENES COLECCION3*/
-    .beauty-coleccion{
-        text-align: center;
-    }
-    .beauty-coleccion img{
-        height: 40vh;
-        background-position: 60% bottom;
-    }
-       
-    .beauty-coleccion p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-     /*IMAGENES COLECCION 4*/
-    .temporada-coleccion{
-        text-align: center;
-    }
-    .temporada-coleccion img{
-        height: 40vh;
-        background-position: 60% bottom;
-    }
-       
-    .temporada-coleccion p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-
-    /*IMAGENES  */
-    .imagenes-coleccion{
-        background-position: 50% top;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 5%;
-    }
-    .interacciones{
-        display: flex;
-        gap: 20px;
-    }
-
-    .piedepagina{
-        color: #6D3B24; 
-        font-size: 15px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 15px; 
-        text-align: center;
-    }
-
      /*---------------------COMIENZO COMPRAS-----------------------------*/
+     
       /*.leyenda h2{
         color: #6D3B24; 
         font-size: 40px;
