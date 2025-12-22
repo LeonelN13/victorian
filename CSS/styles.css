@@ -255,7 +255,7 @@ main p{
 
 
 
-/*---------------------COMIENZO EMPRENDEDORES-----------------------------*/
+
 .titulo{
     background-image: url(../Imagenes/fondo-inicio.jpg);
     height: 90px;
@@ -269,74 +269,14 @@ h1{
 
 }
 
-.leyenda-emprendedores{
-    color: #6D3B24; 
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 15px; 
+/*---------------------COMIENZO EMPRENDEDORES-----------------------------*/
+.texto-emprendedores{
     
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
 }
 
-.leyenda-precios{
-    color: #6D3B24; 
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 60px; 
-    
-}
-    /*IMAGENES ROPA*/
-    .ropa-emprendedores{
-        text-align: center;
-        background-position: relative;
-    }
-    .ropa-emprendedores img{
-        width: 200px;
-        background-position: 60% bottom;
-
-    }
-       
-    .ropa-emprendedores p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-
-      /*IMAGENES ACCESORIOS*/
-    .accesorios-emprendedores{  
-        text-align: center;
-    }
-    .accesorios-emprendedores img{
-        width: 200px;
-        background-position: 60% bottom;
-    }
-       
-    .accesorios-emprendedores p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-
-
-      /*IMAGENES BEAUTY*/
-    .beauty-emprendedores{
-        text-align: center;
-    }
-    .beauty-emprendedores img{
-        width: 200px;
-        background-position: 60% bottom;
-    }
-       
-    .beauty-emprendedores p{  
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    }
-    /*IMAGENES  */
-    .imagenes-emprendedores{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
 
     /*---------------------COMIENZO COLECCION-----------------------------*/
 
