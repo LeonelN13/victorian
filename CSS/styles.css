@@ -1,12 +1,11 @@
-
 /*---RESET---*/
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: borderbox;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -15,52 +14,59 @@ body{
 
 /*---HEADER---*/
 
-header{
+header {
+    display: flex;
+    flex-direction: column;
+
     background-color: white;
     height: 20vh;
     position: sticky;
-    justify-content: space-around; /*---CENTRO TODO LO QUE ESTA EN EL ENCABEZADO ---*/ 
+    justify-content: space-around;
+    /*---CENTRO TODO LO QUE ESTA EN EL ENCABEZADO ---*/
     top: 0px;
     z-index: 100;
     align-items: center;
 }
 
 /*TITULO*/
-h1{
+h1 {
     color: #D47A8B;
-    font-size:  50px;
+    font-size: 50px;
     font-family: "Playfair Display", serif;
     border: white;
     margin-top: 8px;
-    text-shadow: 2px 2px 8px rgb(158, 158, 158); 
-    justify-content: center;  
+    text-shadow: 2px 2px 8px rgb(158, 158, 158);
+    justify-content: center;
 }
-nav{
+
+nav {
     margin-top: 15px;
     justify-content: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 60px;
     justify-content: space-evenly;
     margin-top: 8px;
 
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
 
-nav ul a{
+nav ul a {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: #6D3B24;
 }
 
-.boton-catalogo { /* BOTON DESPLEGABLE */
+.boton-catalogo {
+    /* BOTON DESPLEGABLE */
     border: none !important;
-    background: none;   
+    background: none;
     box-shadow: none !important;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
@@ -68,15 +74,13 @@ nav ul a{
     color: #6D3B24;
 }
 
-
-
-
-
 /* ---------- MAIN ---------- */
 main {
     display: flex;
-    align-items: center;        /* centra verticalmente el contenido (ajustable) */
-    justify-content: space-between; /* texto a la izquierda, imagen a la derecha */
+    align-items: center;
+    /* centra verticalmente el contenido (ajustable) */
+    justify-content: space-between;
+    /* texto a la izquierda, imagen a la derecha */
     padding: 0 1%;
     height: 70vh;
     position: relative;
@@ -89,12 +93,16 @@ main {
 
 /* ---------- DIV TEXTO ---------- */
 .leyenda {
-    display: flex;               /* contenedor flex columna */
+    display: flex;
+    /* contenedor flex columna */
     flex-direction: column;
     gap: 10px;
-    flex: 0 0 80%;               /* fijo ~36% del ancho, se adapta */
-    max-width: none;            /* nunca más ancho que esto */
-    min-width: 280px;          /* evita que se encoja demasiado en pantallas medianas */
+    flex: 0 0 80%;
+    /* fijo ~36% del ancho, se adapta */
+    max-width: none;
+    /* nunca más ancho que esto */
+    min-width: 280px;
+    /* evita que se encoja demasiado en pantallas medianas */
     width: 100%;
     height: 70vh;
     padding: 50px 80px;
@@ -102,31 +110,32 @@ main {
     text-align: left;
     flex: 1;
     justify-content: center;
-   
+
 
     box-sizing: border-box;
-    
+
 }
 
 /* ---------- LEYENDA ---------- */
-.leyenda h2{
-   
-    font-size: 50px;     /* reduce el título para que no invada la sección */
+.leyenda h2 {
+
+    font-size: 50px;
+    /* reduce el título para que no invada la sección */
     font-weight: 700;
     color: #6D3B24;
     margin: 30px;
-   
-  
+
+
 
 }
 
-.leyenda h3{
+.leyenda h3 {
     font-size: 28px;
     color: #6D3B24;
 
 }
 
-.texto-presentacion{
+.texto-presentacion {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 1.6;
@@ -138,16 +147,18 @@ main {
 
 
 /* ---------- BOTONES DE INTERACCION ---------- */
-nav {
+
+.interaccion {
     display: flex;
-    gap: 18px;
-    margin-top: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15PX;
     align-items: center;
-   
+
 }
 
 
-.abrircoleccion a{
+.abrircoleccion a {
 
     text-decoration: none;
     font-size: 18px;
@@ -157,88 +168,90 @@ nav {
     color: #fff;
     line-height: 1;
     top: 50px;
-    
-    
+
+
 }
 
 
-.abrircompras a{
+.abrircompras a {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     background-color: white;
     padding: 15px 25px;
-    border-radius: 15px;    
+    border-radius: 15px;
     color: #6D3B24;
-    display: inline-block   ;
+    display: inline-block;
 
 }
 
 /*---------------------IMAGEN-MODELO-----------------------------*/
 
-main img{
+main img {
     height: 70vh;
     margin-right: 15%;
 }
 
 
 /*---------------------FOOTER-----------------------------*/
-    footer{
-        display: flex;
-        background-color: white;
-        height: 5vh;
-        position: sticky;
-        justify-content: center; /*---CENTRO TODO LO QUE ESTA EN EL ENCABEZADO ---*/ 
-  
-        z-index: 100;
-        align-items: center;
-        margin-top: 15px;
-    }
+footer {
+    display: flex;
+    background-color: white;
+    height: 5vh;
+    position: sticky;
+    justify-content: center;
+    /*---CENTRO TODO LO QUE ESTA EN EL ENCABEZADO ---*/
 
-    footer h3{
-        font-size: 20px;
-        color: #6D3B24;
-        justify-content: center;
-    
-    }
-    footer section{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
+    z-index: 100;
+    align-items: center;
+    margin-top: 15px;
+}
 
-    footer p{
-        display: flex;
-        margin-left: 15px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 15px;
-        color: #6D3B24;
-        margin-top: 15px;
-    }
+footer h3 {
+    font-size: 20px;
+    color: #6D3B24;
+    justify-content: center;
 
-    footer img {
-        width: 30px;     
-        height: 30px;     
-        object-fit: contain;
-    }
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer p {
+    display: flex;
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #6D3B24;
+    margin-top: 15px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
 
 /*---------------------COMIENZO QUIENES SOMOS-----------------------------*/
-.informacion-personal{
+.informacion-personal {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
-    gap: 10px;  
+    gap: 10px;
     padding: 0 0 50%;
 }
 
-main h2{
+main h2 {
     margin-top: 10px;
     font-size: 35px;
     color: #6D3B24;
     text-align: center;
 }
 
-main p{
+main p {
     top: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
@@ -248,56 +261,60 @@ main p{
 }
 
 .card-img-top {
-  height: 240px;
-  object-fit: cover;
+    height: 240px;
+    object-fit: cover;
 }
 
 
 
 
 
-.titulo{
+.titulo {
     background-image: url(../Imagenes/fondo-inicio.jpg);
     height: 90px;
     text-align: center;
 }
-h1{
+
+h1 {
     color: #6D3B24;
-    font-size:  50px;
+    font-size: 50px;
     font-family: "Playfair Display", serif;
-    text-align:center;  
+    text-align: center;
 
 }
 
 /*---------------------COMIENZO EMPRENDEDORES-----------------------------*/
-.texto-emprendedores{
-    
+.texto-emprendedores {
+
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
 }
 
 
-    /*---------------------COMIENZO COLECCION-----------------------------*/
+/*---------------------COMIENZO COLECCION-----------------------------*/
 
-.card-img-collecion {  
-  margin-top: 10px;
-  width: 100%;
-  height: 100px;
-  object-fit: cover;    
+.card-img-collecion {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
-.coleccion{
+
+.coleccion {
     margin-top: 10px;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     gap: 4px;
 }
-.main coleccion{
+
+.main coleccion {
 
     display: flex;
-    align-items: center;        /* centra verticalmente el contenido (ajustable) */
+    align-items: center;
+    /* centra verticalmente el contenido (ajustable) */
     height: 80%;
-    width:auto;
+    width: auto;
     position: relative;
     flex: 1;
 
@@ -308,34 +325,155 @@ h1{
     background-size: cover;
 }
 
-     /*---------------------COMIENZO COMPRAS-----------------------------*/
-     
-      /*.leyenda h2{
-        color: #6D3B24; 
-        font-size: 40px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 30px;
-        margin-left: 60%; 
-     }
-     
-     .leyenda h3{
-        color: #6D3B24; 
-        font-size: 20px;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        margin-top: 15px;
-        margin-left: 50%;     
-     }*/
-     .comprar{
+/*---------------------COMIENZO MOBILE-----------------------------*/
+
+@media (max-width:580px) {
+ /*-INDEX-*/
+    /*-ENCABEZADO-*/
+
+    header {
+
         display: flex;
-        margin-top: 2%;
-        margin-left: 15%;
-     }
-     .celu-wsp{
+        flex-direction: column;
+        height: 100%;
+        width: 35%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+    }
+
+    header nav ul {
         display: flex;
-        height: 450px;
-        margin-right: 20%;
-     }
-     div .leyenda{
-        justify-content: center;
-        align-items: center;
-     }
+        flex-direction: column;
+        gap: 10px;
+        width: 35%;
+        padding-left: 10px;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    header nav {
+        width: 25%;
+        margin-left: 2px;
+    }
+
+    header h1 {
+        width: 65%;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 12px;
+    }
+
+
+    /*-MAIN-*/
+
+    main {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 0;
+   
+
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 0;
+    padding: 0 1%;
+    height: auto;
+    justify-content: center;
+
+}
+
+.leyenda h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.leyenda h3 {
+    font-size: 20px;
+     text-align: center;
+
+}
+
+.texto-presentacion {
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.interaccion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15PX;
+    align-items: center;
+
+}
+
+.abrircoleccion a {
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.abrircompras a {
+    font-size: 15px;
+    padding: 10px 20px;
+    line-height: 1;
+    margin-top: 10px;
+
+}
+
+main img {
+    height: 250px;
+    position: absolute;
+    margin-left: 80%;
+   margin-top: 100%;
+    opacity: 90%;
+
+}
+
+ /*-QUIENES SOMOS-*/
+
+
+.informacion-personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 50%;
+}
+
+main h2 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+main p {
+    top: 10px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    object-fit: cover;
+
+}
+}
