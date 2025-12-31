@@ -21,30 +21,33 @@
 
 <body>
     <header>
-        <h1> VICTORIA'N </h1>
 
-        <nav>
+        <!-- MENÚ NORMAL -->
+
+        <h1 class="d-none d-md-block"> VICTORIA'N </h1>
+
+        <nav class="d-none d-md-block">
             <ul>
 
                 <li> <a href="../index.html"> INICIO </a> </li>
-                <li> <a href="../introduccion/ofertas.html"> OFERTAS </a> </li>
+                <li> <a href="./ofertas.html"> OFERTAS </a> </li>
                 <div class="dropdown">
                     <button class="boton-catalogo" data-bs-toggle="dropdown">
                         CATÁLOGO
                     </button>
                     <ul class="dropdown-menu">
-                         <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
-                            <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
-                            <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
-                            <li><a class="dropdown-item" href="#">BEAUTY</a></li>
-                            <li><a class="dropdown-item" href="#">ROPA</a></li>
-                            <li><a class="dropdown-item" href="#">CARTERAS</a></li>
-                            <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                        <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                        <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                        <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                        <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                        <li><a class="dropdown-item" href="#">ROPA</a></li>
+                        <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                        <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
                     </ul>
                 </div>
 
-                <li> <a href="../introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
-                <li> <a href="../introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                <li> <a href="./quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                <li> <a href="./emprendedores.html"> EMPRENDEDORES </a> </li>
                 <li> <a href="#"> DEVOLUCIONES </a> </li>
                 <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
 
@@ -52,10 +55,66 @@
 
         </nav>
 
+
+
+        <!-- MENÚ RESPONSIVE -->
+
+        <button class="btn d-md-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+            aria-controls="menuMobile">
+            ☰
+        </button>
+
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuMobile">
+
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">VICTORIA'N</h1>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <nav class="nav flex-column">
+                    <ul>
+
+                        <li> <a href="../index.html"> INICIO </a> </li>
+                        <li> <a href="./ofertas.html"> OFERTAS </a> </li>
+                        <div class="dropdown">
+                            <button class="boton-catalogo" data-bs-toggle="dropdown">
+                                CATÁLOGO
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                                <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                                <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                                <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                                <li><a class="dropdown-item" href="#">ROPA</a></li>
+                                <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                                <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                            </ul>
+                        </div>
+
+                        <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                        <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                        <li> <a href="#"> DEVOLUCIONES </a> </li>
+                        <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+
     </header>
+
+
     <main class="informacion-personal">
         <h2>¿Qué es Victoria'n?</h2>
-        <p> Victoria'n es una marca de moda femenina 100% onlina inspirada <br>
+        <p class="info"> Victoria'n es una marca de moda femenina 100% onlina inspirada <br>
             en el lujo suave, la estética moderna y el brillo del rosa gold.<br>
             Creamos un universo visual donde cada detalle - desde los <br>
             productos hasta las fotos. Transmite glamour, feminidad y <br>

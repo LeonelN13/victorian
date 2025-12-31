@@ -19,39 +19,97 @@
 
 
 <body>
-    <header>
-        <h1> VICTORIA'N </h1>
+      <header>
 
-        <nav>
-                <ul> 
+        <!-- MENÚ NORMAL -->
 
-                    <li> <a href="../index.html"> INICIO </a> </li>
-                    <li> <a href="../Introduccion/ofertas.html"> OFERTAS </a> </li>
-                    <div class="dropdown">
-                        <button class="boton-catalogo"  data-bs-toggle="dropdown">
-                            CATÁLOGO        
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
-                            <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
-                            <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
-                            <li><a class="dropdown-item" href="#">BEAUTY</a></li>
-                            <li><a class="dropdown-item" href="#">ROPA</a></li>
-                            <li><a class="dropdown-item" href="#">CARTERAS</a></li>
-                            <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
-                        </ul>
-                    </div>
-                    
-                    <li> <a href="../Introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
-                    <li> <a href="../Introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
-                    <li> <a href="#"> DEVOLUCIONES </a> </li>
-                    <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+        <h1 class="d-none d-md-block"> VICTORIA'N </h1>
 
-                </ul>      
+        <nav class="d-none d-md-block">
+            <ul>
 
-            </nav>
+                <li> <a href="./index.html"> INICIO </a> </li>
+                <li> <a href="./introduccion/ofertas.html"> OFERTAS </a> </li>
+                <div class="dropdown">
+                    <button class="boton-catalogo" data-bs-toggle="dropdown">
+                        CATÁLOGO
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./introduccion/coleccion.html">TODO</a></li>
+                        <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                        <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                        <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                        <li><a class="dropdown-item" href="#">ROPA</a></li>
+                        <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                        <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                    </ul>
+                </div>
+
+                <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                <li> <a href="#"> DEVOLUCIONES </a> </li>
+                <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <!-- MENÚ RESPONSIVE -->
+
+        <button class="btn d-md-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+            aria-controls="menuMobile">
+            ☰
+        </button>
+
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuMobile">
+
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">VICTORIA'N</h1>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <nav class="nav flex-column">
+                    <ul>
+
+                        <li> <a href="../index.html"> INICIO </a> </li>
+                        <li> <a href="./ofertas.html"> OFERTAS </a> </li>
+                        <div class="dropdown">
+                            <button class="boton-catalogo" data-bs-toggle="dropdown">
+                                CATÁLOGO
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                                <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                                <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                                <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                                <li><a class="dropdown-item" href="#">ROPA</a></li>
+                                <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                                <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                            </ul>
+                        </div>
+
+                        <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                        <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                        <li> <a href="#"> DEVOLUCIONES </a> </li>
+                        <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
 
     </header>
+    
     <main>
 
     </main>

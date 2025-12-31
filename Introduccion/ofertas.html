@@ -1,120 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victorian</title>
 
     <!--FONT-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <!--BOOSTRAP-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
-        <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 
-    </head>
+</head>
 
 
 <body>
-    <header>   
-            <h1> VICTORIA'N </h1>
+    <header>
 
-            <nav>
-                <ul> 
+        <!-- MENÚ NORMAL -->
 
-                    <li> <a href="../index.html"> INICIO </a> </li>
-                    <li> <a href="../Introduccion/ofertas.html"> OFERTAS </a> </li>
-                    <div class="dropdown">
-                        <button class="boton-catalogo"  data-bs-toggle="dropdown">
-                            CATÁLOGO        
-                        </button>
-                        <ul class="dropdown-menu">
-                             <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
-                            <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
-                            <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
-                            <li><a class="dropdown-item" href="#">BEAUTY</a></li>
-                            <li><a class="dropdown-item" href="#">ROPA</a></li>
-                            <li><a class="dropdown-item" href="#">CARTERAS</a></li>
-                            <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
-                        </ul>
-                    </div>
-                    
-                    <li> <a href="../Introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
-                    <li> <a href="../Introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
-                    <li> <a href="#"> DEVOLUCIONES </a> </li>
-                    <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+        <h1 class="d-none d-md-block"> VICTORIA'N </h1>
 
-                </ul>      
+        <nav class="d-none d-md-block">
+            <ul>
 
-            </nav>
-       
-    </header>
-
-    <main class="oferta">
-    
-        <div class="leyenda">
-            
-                  <!--MUCHA AYUDA DE CHAT GPT- Y EL BOTON DE LAS IMAGENES NO ES FUNCIONAL,
-                  SE GENERÓ LA IMAGEN CON EL BOTÓN Y NO ME DI CUENTA-->
-        
-            <div id="carouselExampleAutoplaying" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 600px;">
-        
-                <div class="carousel-inner">
-        
-                    <div class="carousel-item active">
-                        <img src="../Imagenes/oferta-1.png" class="d-block w-100" alt="oferta-1">
-                    </div>
-        
-                    <div class="carousel-item">
-                        <img src="../Imagenes/oferta-2.png" class="d-block w-100" alt="oferta-2">
-                    </div>
-        
-                    <div class="carousel-item">
-                        <img src="../Imagenes/oferta-3.png" class="d-block w-100" alt="oferta-3">
-                    </div>
-        
+                <li> <a href="../index.html"> INICIO </a> </li>
+                <li> <a href="./ofertas.html"> OFERTAS </a> </li>
+                <div class="dropdown">
+                    <button class="boton-catalogo" data-bs-toggle="dropdown">
+                        CATÁLOGO
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                        <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                        <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                        <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                        <li><a class="dropdown-item" href="#">ROPA</a></li>
+                        <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                        <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                    </ul>
                 </div>
-        
+
+                <li> <a href="./quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                <li> <a href="./emprendedores.html"> EMPRENDEDORES </a> </li>
+                <li> <a href="#"> DEVOLUCIONES </a> </li>
+                <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <!-- MENÚ RESPONSIVE -->
+
+        <button class="btn d-md-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+            aria-controls="menuMobile">
+            ☰
+        </button>
+
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuMobile">
+
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">VICTORIA'N</h1>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <nav class="nav flex-column">
+                    <ul>
+
+                        <li> <a href="../index.html"> INICIO </a> </li>
+                        <li> <a href="./ofertas.html"> OFERTAS </a> </li>
+                        <div class="dropdown">
+                            <button class="boton-catalogo" data-bs-toggle="dropdown">
+                                CATÁLOGO
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                                <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                                <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                                <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                                <li><a class="dropdown-item" href="#">ROPA</a></li>
+                                <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                                <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                            </ul>
+                        </div>
+
+                        <li> <a href="./quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                        <li> <a href="./emprendedores.html"> EMPRENDEDORES </a> </li>
+                        <li> <a href="#"> DEVOLUCIONES </a> </li>
+                        <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+
+    </header>
+    <main class="oferta">
+
+        <div class="leyenda">
+
+            <!--MUCHA AYUDA DE CHAT GPT- Y EL BOTON DE LAS IMAGENES NO ES FUNCIONAL,
+                  SE GENERÓ LA IMAGEN CON EL BOTÓN Y NO ME DI CUENTA-->
+
+            <div id="carouselExampleAutoplaying" class="carousel slide mx-auto" data-bs-ride="carousel"
+                style="width: 600px;">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="../imagenes/oferta-1.png" class="d-block w-100" alt="oferta-1">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/oferta-2.png" class="d-block w-100" alt="oferta-2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/oferta-3.png" class="d-block w-100" alt="oferta-3">
+                    </div>
+
+                </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-        
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
-        
+
             </div>
-        
+
         </div>
 
-        </main>
-        
-        
-        <footer>
-            <h3> ¡Gracias por visitarnos!</h3>
-            <section>
-        
-                <p> Contactanos:</p>
-                <a href="#"> <img src="../Imagenes/logo-wsp.png"> </a>
-                <a href="#"> <img src="../Imagenes/logo-ig.png"> </a>
-                <a href="#"> <img src="../Imagenes/logo-fb.png"> </a>
-        
-            </section>
-        
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-        </body>
-        
-        </html>
+    </main>
+
+
+    <footer>
+        <h3> ¡Gracias por visitarnos!</h3>
+        <section>
+
+            <p> Contactanos:</p>
+            <a href="#"> <img src="../Imagenes/logo-wsp.png"> </a>
+            <a href="#"> <img src="../Imagenes/logo-ig.png"> </a>
+            <a href="#"> <img src="../Imagenes/logo-fb.png"> </a>
+
+        </section>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

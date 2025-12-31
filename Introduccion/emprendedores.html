@@ -21,19 +21,22 @@
 
 <body>
     <header>
-        <h1> VICTORIA'N </h1>
 
-        <nav>
+        <!-- MENÚ NORMAL -->
+
+        <h1 class="d-none d-md-block"> VICTORIA'N </h1>
+
+        <nav class="d-none d-md-block">
             <ul>
 
                 <li> <a href="../index.html"> INICIO </a> </li>
-                <li> <a href="../Introduccion/ofertas.html"> OFERTAS </a> </li>
+                <li> <a href="./ofertas.html"> OFERTAS </a> </li>
                 <div class="dropdown">
                     <button class="boton-catalogo" data-bs-toggle="dropdown">
                         CATÁLOGO
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                        <li><a class="dropdown-item" href="./introduccion/coleccion.html">TODO</a></li>
                         <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
                         <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
                         <li><a class="dropdown-item" href="#">BEAUTY</a></li>
@@ -43,8 +46,8 @@
                     </ul>
                 </div>
 
-                <li> <a href="../Introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
-                <li> <a href="../Introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                <li> <a href="./quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                <li> <a href="./emprendedores.html"> EMPRENDEDORES </a> </li>
                 <li> <a href="#"> DEVOLUCIONES </a> </li>
                 <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
 
@@ -52,7 +55,62 @@
 
         </nav>
 
+
+
+        <!-- MENÚ RESPONSIVE -->
+
+        <button class="btn d-md-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+            aria-controls="menuMobile">
+            ☰
+        </button>
+
+        <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuMobile">
+
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">VICTORIA'N</h1>
+
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <nav class="nav flex-column">
+                    <ul>
+
+                        <li> <a href="../index.html"> INICIO </a> </li>
+                        <li> <a href="./ofertas.html"> OFERTAS </a> </li>
+                        <div class="dropdown">
+                            <button class="boton-catalogo" data-bs-toggle="dropdown">
+                                CATÁLOGO
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
+                                <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                                <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                                <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                                <li><a class="dropdown-item" href="#">ROPA</a></li>
+                                <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                                <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                            </ul>
+                        </div>
+
+                        <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                        <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                        <li> <a href="#"> DEVOLUCIONES </a> </li>
+                        <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+
     </header>
+
 
     <main class="texto-emprendedores">
         <h2>EMPRENDEDORES</h2>
@@ -64,7 +122,7 @@
 
                 <div class="col-md-2 col-sm-6 mb-2">
                     <div class="card h-100">
-                        <img src="../Imagenes/maquillaje.png" class="card-img-top" alt="maquillaje-mayorista">
+                        <img src="../imagenes/maquillaje.png" class="card-img-top" alt="maquillaje-mayorista">
                         <div class="card-body text-center">
                             <h5 class="card-title">Maquillaje</h5>
                             <a href="#" class="btn bg-warning bg-gradient">Conocé más</a>
@@ -74,7 +132,7 @@
 
                 <div class="col-md-2 col-sm-6 mb-2">
                     <div class="card h-100">
-                        <img src="../Imagenes/ropa.png" class="card-img-top" alt="ropa-mayorista">
+                        <img src="../imagenes/ropa.png" class="card-img-top" alt="ropa-mayorista">
                         <div class="card-body text-center">
                             <h5 class="card-title">Ropa</h5>
                             <a href="#" class="btn bg-warning bg-gradient">Conocé más</a>
@@ -84,7 +142,7 @@
 
                 <div class="col-md-2 col-sm-6 mb-2">
                     <div class="card h-100">
-                        <img src="../Imagenes/beauty.png" class="card-img-top" alt="beauty-mayorista">
+                        <img src="../imagenes/beauty.png" class="card-img-top" alt="beauty-mayorista">
                         <div class="card-body text-center">
                             <h5 class="card-title">Beauty</h5>
                             <a href="#" class="btn bg-warning bg-gradient">Conocé más</a>
@@ -94,7 +152,7 @@
 
                 <div class="col-md-2 col-sm-6 mb-2">
                     <div class="card h-100">
-                        <img src="../Imagenes/cartera.png" class="card-img-top" alt="cartera-mayoristas">
+                        <img src="../imagenes/cartera.png" class="card-img-top" alt="cartera-mayoristas">
                         <div class="card-body text-center">
                             <h5 class="card-title">Bolsos</h5>
                             <a href="#" class="btn bg-warning bg-gradient">Conocé más</a>
@@ -104,7 +162,7 @@
 
                 <div class="col-md-2 col-sm-6 mb-2">
                     <div class="card h-100">
-                        <img src="../Imagenes/accesorios.jpg" class="card-img-top" alt="accesorios-mayoristas">
+                        <img src="../imagenes/accesorios.jpg" class="card-img-top" alt="accesorios-mayoristas">
                         <div class="card-body text-center">
                             <h5 class="card-title">Accesorios</h5>
                             <a href="#" class="btn bg-warning bg-gradient">Conocé más</a>
@@ -120,9 +178,9 @@
         <section>
 
             <p> Contactanos:</p>
-            <a href="#"> <img src="../Imagenes/logo-wsp.png"> </a>
-            <a href="#"> <img src="../Imagenes/logo-ig.png"> </a>
-            <a href="#"> <img src="../Imagenes/logo-fb.png"> </a>
+            <a href="#"> <img src="../imagenes/logo-wsp.png"> </a>
+            <a href="#"> <img src="../imagenes/logo-ig.png"> </a>
+            <a href="#"> <img src="../imagenes/logo-fb.png"> </a>
 
         </section>
 

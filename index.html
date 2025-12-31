@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victorian</title>
-   
+
     <!--FONT-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <!--BOOSTRAP-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css">
-    
-    </head>
-    
+
+</head>
+
 
 <body>
     <header>
+
+        <!-- MENÚ NORMAL -->
+
+        <h1 class="d-none d-md-block"> VICTORIA'N </h1>
+
+        <nav class="d-none d-md-block">
+            <ul>
+
+                <li> <a href="./index.html"> INICIO </a> </li>
+                <li> <a href="./introduccion/ofertas.html"> OFERTAS </a> </li>
+                <div class="dropdown">
+                    <button class="boton-catalogo" data-bs-toggle="dropdown">
+                        CATÁLOGO
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./introduccion/coleccion.html">TODO</a></li>
+                        <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
+                        <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
+                        <li><a class="dropdown-item" href="#">BEAUTY</a></li>
+                        <li><a class="dropdown-item" href="#">ROPA</a></li>
+                        <li><a class="dropdown-item" href="#">CARTERAS</a></li>
+                        <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
+                    </ul>
+                </div>
+
+                <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
+                <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
+                <li> <a href="#"> DEVOLUCIONES </a> </li>
+                <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <!-- MENÚ RESPONSIVE -->
 
         <button class="btn d-md-none btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
             aria-controls="menuMobile">
             ☰
         </button>
-        
+
         <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuMobile">
-    
+
             <div class="offcanvas-header">
                 <h1 class="offcanvas-title">VICTORIA'N</h1>
 
 
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
-    
+
             <div class="offcanvas-body">
-                    
+
                 <nav class="nav flex-column">
                     <ul>
-    
+
                         <li> <a href="./index.html"> INICIO </a> </li>
                         <li> <a href="./introduccion/ofertas.html"> OFERTAS </a> </li>
                         <div class="dropdown">
@@ -61,120 +106,72 @@
                                 <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
                             </ul>
                         </div>
-    
+
                         <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
                         <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
                         <li> <a href="#"> DEVOLUCIONES </a> </li>
                         <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
-    
+
                     </ul>
-    
+
                 </nav>
 
             </div>
-    
+
         </div>
 
 
-
-
-        <!-- <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Menú</button>
-    
-        <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
-    
-        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
-            aria-labelledby="offcanvasResponsiveLabel">
-
-            <div class="offcanvas-header">
-    
-                <h1 class="offcanvas-title" id="offcanvasResponsiveLabel">VICTORIA'N</h1>
-    
-                <nav>
-                    <ul>
-    
-                        <li> <a href="./index.html"> INICIO </a> </li>
-                        <li> <a href="./introduccion/ofertas.html"> OFERTAS </a> </li>
-                        <div class="dropdown">
-                            <button class="boton-catalogo" data-bs-toggle="dropdown">
-                                CATÁLOGO
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./coleccion.html">TODO</a></li>
-                                <li><a class="dropdown-item" href="#">MAQUILLAJE</a></li>
-                                <li><a class="dropdown-item" href="#">SKIN CARE</a></li>
-                                <li><a class="dropdown-item" href="#">BEAUTY</a></li>
-                                <li><a class="dropdown-item" href="#">ROPA</a></li>
-                                <li><a class="dropdown-item" href="#">CARTERAS</a></li>
-                                <li><a class="dropdown-item" href="#">ACCESORIOS</a></li>
-                            </ul>
-                        </div>
-    
-                        <li> <a href="./introduccion/quienessomos.html"> SOBRE NOSOTROS </a> </li>
-                        <li> <a href="./introduccion/emprendedores.html"> EMPRENDEDORES </a> </li>
-                        <li> <a href="#"> DEVOLUCIONES </a> </li>
-                        <li> <a href="#"> PREGUNTAS FRECUENTES </a> </li>
-    
-                    </ul>
-    
-                </nav>
-    
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-            </div>
-        </div> -->
-    
-    
     </header>
 
-    <main>      
-            
-            <div class="leyenda"> 
+    <main>
 
-                <h2> Victoria'n</h2>
+        <div class="leyenda">
 
-                <h3> El lugar favorito de las girls</h3>
+            <h2> Victoria'n</h2>
 
-                <p class="texto-presentacion"> Moda femenina en clave rosa gold, diseñada para brillar.<br>
-                        Accesorios, beauty, estilo y una experiencia que se siente...<br>
-                        premium.
-                </p>
+            <h3> El lugar favorito de las girls</h3>
 
-                <nav class="interaccion">
-                    <div class="abrircoleccion">
-                        <a href="./introduccion/coleccion.html"> Entrar a la Colección </a> 
-                    </div>
-                    <div class="abrircompras">
-                        <a href="./introduccion/emprendedores.html"> Precios Mayoristas </a>
-                    </div>
-                </nav>
-            
-            </div>
+            <p class="texto-presentacion"> Moda femenina en clave rosa gold, diseñada para brillar.<br>
+                Accesorios, beauty, estilo y una experiencia que se siente...<br>
+                premium.
+            </p>
 
-            
-            <img src="./imagenes/modeloprincipal.png" alt="modelo">
-            
+            <nav class="interaccion">
+                <div class="abrircoleccion">
+                    <a href="./introduccion/coleccion.html"> Entrar a la Colección </a>
+                </div>
+                <div class="abrircompras">
+                    <a href="./introduccion/emprendedores.html"> Precios Mayoristas </a>
+                </div>
+            </nav>
 
-        </div>  
+        </div>
+
+
+        <img src="./imagenes/modeloprincipal.png" alt="modelo">
+
+
+        </div>
 
 
     </main>
 
 
-    <footer> 
-       <h3> ¡Gracias por visitarnos!</h3>
+    <footer>
+        <h3> ¡Gracias por visitarnos!</h3>
         <section>
 
             <p> Contactanos:</p>
-            <a href="#"> <img src="./imagenes/logo-wsp.png" > </a>
-            <a href="#"> <img src="./imagenes/logo-ig.png" > </a>
-            <a href="#"> <img src="./imagenes/logo-fb.png" > </a>
-    
+            <a href="#"> <img src="./imagenes/logo-wsp.png"> </a>
+            <a href="#"> <img src="./imagenes/logo-ig.png"> </a>
+            <a href="#"> <img src="./imagenes/logo-fb.png"> </a>
+
         </section>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
