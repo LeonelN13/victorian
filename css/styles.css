@@ -325,6 +325,27 @@ h1 {
     background-size: cover;
 }
 
+/*---------------------COMIENZO OFERTAS-----------------------------*/
+main.oferta {
+    padding-bottom: 0;
+}
+
+.carrousel-ofertas{
+     display: flex;
+    /* contenedor flex columna */
+    flex-direction: column;
+    gap: 10px;
+    max-width: none;
+    /* nunca más ancho que esto */
+    min-width: 280px;
+    /* evita que se encoja demasiado en pantallas medianas */
+    width: 100%;
+    height: 70vh;
+    flex: 1;
+    justify-content: center;
+}
+
+
 /*---------------------COMIENZO MOBILE-----------------------------*/
 
 @media (max-width:580px) {
@@ -483,5 +504,23 @@ main h2 {
 .container img{
     display: none;
 }
-   
+
+ /*-OFERTAS-*/
+
+.carrousel-ofertas{
+     display: flex;
+    /* contenedor flex columna */
+    flex-direction: column;
+    gap: 10px;
+    max-width: none;
+    /* nunca más ancho que esto */
+    min-width: 280px;
+    /* evita que se encoja demasiado en pantallas medianas */
+    width: 100%;
+    height: 70vh;
+    flex: 1;
+    justify-content: center;
 }
+
+}
+
