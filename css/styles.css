@@ -330,7 +330,9 @@ main.oferta {
     padding-bottom: 0;
 }
 
+
 .carrousel-ofertas{
+    position: relative  ;
      display: flex;
     /* contenedor flex columna */
     flex-direction: column;
@@ -345,182 +347,200 @@ main.oferta {
     justify-content: center;
 }
 
+.img-desktop {
+    display: block;
+}
+
+.img-mobile {
+    display: none; 
+}
 
 /*---------------------COMIENZO MOBILE-----------------------------*/
 
-@media (max-width:580px) {
- /*-INDEX-*/
+    @media (max-width:580px) {
+    /*-INDEX-*/
 
-    header {
-        border-radius: 5px;
+        header {
+            border-radius: 5px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        header nav ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 35%;
+            padding-left: 10px;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        header nav {
+            max-width: 25%;
+            margin-left: 2px;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 35px;
+            margin-left: 25px;
+        }
+
+
+        /*-MAIN-*/
+
+        main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 1%;
+        max-width: auto;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: absolute;
-        margin-left: 20px;
-        margin-top: 20px;
+        justify-content: center;
 
     }
 
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        width: 35%;
-        padding-left: 10px;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    header nav {
-        max-width: 25%;
-        margin-left: 2px;
-    }
-
-    header h1 {
+    .leyenda h2 {
+        font-size: 40px;
         text-align: center;
-        font-size: 35px;
-        margin-left: 25px;
+        margin-top: 5px;
+    }
+
+    .leyenda h3 {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .texto-presentacion {
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .interaccion {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15PX;
+        align-items: center;
+
+    }
+
+    .abrircoleccion a {
+        font-size: 15px;
+        padding: 10px 20px;
+        line-height: 1;
+        margin-top: 10px;
+    }
+
+    .abrircompras a {
+        font-size: 15px;
+        padding: 10px 20px;
+        line-height: 1;
+        margin-top: 10px;
+
+    }
+
+    main img.modelo{
+        position: absolute;
+        height: 220px;
+        opacity: 90%;
+
+        bottom: 0;
+        left: 63% ;
+
+
+    }
+
+    footer{
+        height: 20%;
+        justify-content: center;
+    }
+
+    footer h3 {
+        font-size: 15px;
+
     }
 
 
-    /*-MAIN-*/
-
-    main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    padding: 0 1%;
-    max-width: auto;
-    height: auto;
-    justify-content: center;
-
-}
-
-.leyenda h2 {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.leyenda h3 {
-    font-size: 20px;
-    text-align: center;
-
-}
-
-.texto-presentacion {
-    font-size: 15px;
-    margin: 0;
-    text-align: center;
-}
-
-.interaccion {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15PX;
-    align-items: center;
-
-}
-
-.abrircoleccion a {
-    font-size: 15px;
-    padding: 10px 20px;
-    line-height: 1;
-    margin-top: 10px;
-}
-
-.abrircompras a {
-    font-size: 15px;
-    padding: 10px 20px;
-    line-height: 1;
-    margin-top: 10px;
-
-}
-
-main img {
-    position: absolute;
-    height: 220px;
-    opacity: 90%;
-
-    bottom: 0;
-    left: 63% ;
+    /*-QUIENES SOMOS-*/
 
 
-}
+    .informacion-personal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        padding: 0 1%;
+        max-width: auto;
+        height: auto;
+        justify-content: center;
+    }
 
-footer{
-    height: 20%;
-    justify-content: center;
-}
+    main h2 {
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
 
-footer h3 {
-    font-size: 15px;
-
-}
-
-
- /*-QUIENES SOMOS-*/
-
-
-.informacion-personal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    padding: 0 1%;
-    max-width: auto;
-    height: auto;
-    justify-content: center;
-}
-
-main h2 {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: center;
-}
-
-.info {
-    max-width: 80%;
-    top: 10px;
-    font-size: 17px;
-    text-align: center;
+    .info {
+        max-width: 80%;
+        top: 10px;
+        font-size: 17px;
+        text-align: center;
 
 
 
-}
+    }
 
-.container{
-    max-width: 80%;
-    justify-content: center;
-    object-fit: contain;
-    box-shadow: gray;
-}
+    .container{
+        max-width: 80%;
+        justify-content: center;
+        object-fit: contain;
+        box-shadow: gray;
+    }
 
-.container img{
-    display: none;
-}
+    .container img{
+        display: none;
+    }
 
- /*-OFERTAS-*/
+    /*-OFERTAS-*/
+    main.oferta {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 1rem 0;
 
-.carrousel-ofertas{
-     display: flex;
-    /* contenedor flex columna */
-    flex-direction: column;
-    gap: 10px;
-    max-width: none;
-    /* nunca más ancho que esto */
-    min-width: 280px;
-    /* evita que se encoja demasiado en pantallas medianas */
-    width: 100%;
-    height: 70vh;
-    flex: 1;
-    justify-content: center;
-}
+        background-color: aqua;
+        min-height: 200px;
+    }
 
-}
+    .carrousel-ofertas {
+        height: 100%;
+        width:auto;
+        margin: 0 auto;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        height:80vh;
+        display: block;
+    
+    }
+
+    }
 
