@@ -1,0 +1,38 @@
+ @media (max-width:580px) {
+
+     header {
+         border-radius: 5px;
+         height: auto;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         position: absolute;
+         margin-left: 20px;
+         margin-top: 20px;
+
+         h1 {
+             text-align: center;
+             font-size: 35px;
+             margin-left: 25px;
+         }
+
+         nav {
+             max-width: 25%;
+             margin-left: 2px;
+
+             ul {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 15px;
+                 width: 35%;
+                 padding-left: 10px;
+                 align-items: flex-start;
+                 text-align: left;
+             }
+
+         }
+
+
+     }
+ }

@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+
+/*---------------------COMIENZO OFERTAS-----------------------------*/
+main.oferta {
+    padding-bottom: 0;
+
+    .carrousel-ofertas {
+        position: relative;
+        display: flex;
+        /* contenedor flex columna */
+        flex-direction: column;
+        gap: 10px;
+        max-width: none;
+        /* nunca más ancho que esto */
+        min-width: 280px;
+        /* evita que se encoja demasiado en pantallas medianas */
+        width: 100%;
+        height: 70vh;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .img-desktop {
+        display: block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+
+}

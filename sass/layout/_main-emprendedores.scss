@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+
+
+/*---------------------COMIENZO EMPRENDEDORES-----------------------------*/
+.texto-emprendedores {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-textos;
+
+    .card-img-top {
+        height: 240px;
+        object-fit: cover;
+    }
+}

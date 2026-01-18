@@ -1,0 +1,116 @@
+@use "../utilities/variables" as *;
+
+main {   
+
+    display: flex;
+    align-items: center;
+    /* centra verticalmente el contenido (ajustable) */
+    justify-content: space-between;
+    /* texto a la izquierda, imagen a la derecha */
+    padding: 0 1%;
+    height: 70vh;
+    position: relative;
+
+    background-image: url("../imagenes/fondo-inicio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* ---------- DIV TEXTO ---------- */
+
+    .leyenda {
+        display: flex;
+        /* contenedor flex columna */
+        flex-direction: column;
+        gap: 10px;
+        flex: 0 0 80%;
+        /* fijo ~36% del ancho, se adapta */
+        max-width: none;
+        /* nunca más ancho que esto */
+        min-width: 280px;
+        /* evita que se encoja demasiado en pantallas medianas */
+        width: 100%;
+        height: 70vh;
+        padding: 50px 80px;
+        color: $color-textos;
+        text-align: left;
+        flex: 1;
+        justify-content: center;
+
+
+        box-sizing: border-box;
+
+        h2 {
+
+            font-size: 50px;
+            /* reduce el título para que no invada la sección */
+            font-weight: 700;
+            color: $color-textos;
+            margin: 30px;
+
+
+
+        }
+
+        h3 {
+            font-size: 28px;
+            color: $color-textos;
+
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0;
+            text-align: justify;
+            text-justify: inter-word;
+            color: $color-textos;
+        }
+
+    }
+
+    nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15PX;
+            align-items: center;
+
+            .abrircoleccion a {
+
+                text-decoration: none;
+                font-size: 18px;
+                background-color:$color-textos;
+                padding: 15px 25px;
+                border-radius: 15px;
+                color: #fff;
+                line-height: 1;
+                top: 50px;
+
+
+            }
+
+
+            .abrircompras a {
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+                background-color: white;
+                padding: 15px 25px;
+                border-radius: 15px;
+                color:$color-textos;
+                display: inline-block;
+
+            }
+
+    }
+
+
+    img {
+        /*---------------------IMAGEN-MODELO-----------------------------*/
+        height: 70vh;
+        margin-right: 15%;
+    }
+
+}
