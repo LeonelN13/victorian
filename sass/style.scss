@@ -9,17 +9,18 @@
 @use "layout/main-catalogo";
 @use "layout/main-ofertas";
 @use "layout/main-emprendedores";
-
-
 @use "layout/footer";
-@use "layout/mediaqueries-header";
-@use "layout/mediaqueries-index";
-@use "layout/mediaqueries-footer";
 
 
 
+@import "layout/mediaqueries-header";
+@import "layout/mediaqueries-index";
 
+@import "layout/mediaqueries-quienes-somos";
+@import "layout/mediaqueries-ofertas";
+@import"layout/mediaqueries-footer";
 
+    
 
 
 

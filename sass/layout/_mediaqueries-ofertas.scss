@@ -1,0 +1,33 @@
+    @media (max-width:580px) {
+
+        /*-OFERTAS-*/
+        main.oferta {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding: 1rem 0;
+
+            background-color: aqua;
+            min-height: 200px;
+
+            .carrousel-ofertas {
+                height: 100%;
+                width: auto;
+                margin: 0 auto;
+
+
+                .img-desktop {
+                    display: none;
+                }
+
+                .img-mobile {
+                    height: 80vh;
+                    display: block;
+
+                }
+            }
+
+        }
+
+    }

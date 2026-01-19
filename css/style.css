@@ -271,6 +271,7 @@ footer section img {
   object-fit: contain;
 }
 
+
 @media (max-width: 580px) {
   header {
     border-radius: 5px;
@@ -302,6 +303,7 @@ footer section img {
     text-align: left;
   }
 }
+
 @media (max-width: 580px) {
   main {
     display: flex;
@@ -354,6 +356,8 @@ footer section img {
     left: 63%;
   }
 }
+
+
 @media (max-width: 580px) {
   footer {
     height: 20%;
