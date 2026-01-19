@@ -21,12 +21,12 @@ main.oferta {
         justify-content: center;
     }
 
-    .img-desktop {
-        display: block;
+    .img-desktop { 
+        display: none;
     }
 
     .img-mobile {
-        display: none;
+        display: block;
     }
 
 

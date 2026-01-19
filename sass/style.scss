@@ -1,27 +1,21 @@
-@use "base/reset";
-@use "base/tipografia";
-@use "base/generales";
+    @use "base/reset";
+    @use "base/tipografia";
+    @use "base/generales";
 
-@use "layout/header";
+    @use "layout/header";
 
-@use "layout/main";
-@use "layout/main-quienes-somos";
-@use "layout/main-catalogo";
-@use "layout/main-ofertas";
-@use "layout/main-emprendedores";
-@use "layout/footer";
-
-
-
-@import "layout/mediaqueries-header";
-@import "layout/mediaqueries-index";
-
-@import "layout/mediaqueries-quienes-somos";
-@import "layout/mediaqueries-ofertas";
-@import"layout/mediaqueries-footer";
-
-    
+    @use "layout/main";
+    @use "layout/main-quienes-somos";
+    @use "layout/main-catalogo";
+    @use "layout/main-ofertas";
+    @use "layout/main-emprendedores";
+    @use "layout/footer";
 
 
 
-
+@use "mediaqueries/mediaqueries-header";
+@use "mediaqueries/mediaqueries-index";
+@use "mediaqueries/mediaqueries-ofertas";
+@use "mediaqueries/mediaqueries-quienes-somos";
+@use "mediaqueries/mediaqueries-emprendedores";
+@use "mediaqueries/mediaqueries-footer";
