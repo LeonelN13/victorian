@@ -19,7 +19,7 @@ header {
         /*TITULO*/
         color: $color-principal;
         font-size: 50px;
-        font-family: "Playfair Display", serif;
+        font-family: $fuente-titulo;
         border: white;
         margin-top: 8px;
         justify-content: center;
@@ -46,8 +46,8 @@ header {
         }
 
         a {
-            font-family: "Montserrat", sans-serif;
-            font-size: 15px;
+            font-family: $fuente-textos;
+            font-size:15px;
             text-decoration: none;
             color: $color-principal;
         }
@@ -58,7 +58,7 @@ header {
             border: none !important;
             background: none;
             box-shadow: none !important;
-            font-family: "Montserrat", sans-serif;
+            font-family: $fuente-textos;
             font-size: 15px;
             text-decoration: none;
             color: $color-principal;

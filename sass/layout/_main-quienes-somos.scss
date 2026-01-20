@@ -1,7 +1,7 @@
 @use "../utilities/variables" as *;
 
 /*---------------------COMIENZO QUIENES SOMOS-----------------------------*/
-.informacion-personal{
+.informacion-personal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,17 +17,13 @@
 
     p {
         top: 10px;
-        font-family: "Montserrat", sans-serif;
+        font-family: $fuente-textos;
         font-size: 20px;
         text-align: center;
-        color:$color-textos;
+        color: $color-textos;
 
     }
 
-    .card-img-top {
-        height: 240px;
-        object-fit: cover;
-    }
 
 
 

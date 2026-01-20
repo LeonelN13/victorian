@@ -1,6 +1,6 @@
 @use "../utilities/variables" as *;
 
-main {   
+main {
 
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@ main {
         }
 
         p {
-            font-family: "Montserrat", sans-serif;
+            font-family: $fuente-textos;
             font-size: 18px;
             line-height: 1.6;
             margin: 0;
@@ -71,38 +71,14 @@ main {
     }
 
     nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15PX;
-            align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15PX;
+        align-items: center;
 
-            .abrircoleccion a {
-
-                text-decoration: none;
-                font-size: 18px;
-                background-color:$color-textos;
-                padding: 15px 25px;
-                border-radius: 15px;
-                color: #fff;
-                line-height: 1;
-                top: 50px;
-
-
-            }
-
-
-            .abrircompras a {
-                text-align: center;
-                text-decoration: none;
-                font-size: 18px;
-                background-color: white;
-                padding: 15px 25px;
-                border-radius: 15px;
-                color:$color-textos;
-                display: inline-block;
-
-            }
+       
+        }
 
     }
 
@@ -112,5 +88,3 @@ main {
         height: 70vh;
         margin-right: 15%;
     }
-
-}

@@ -1,6 +1,8 @@
     @use "base/reset";
-    @use "base/tipografia";
     @use "base/generales";
+
+    @use "components/cards";
+    @use "components/botones";
 
     @use "layout/header";
 

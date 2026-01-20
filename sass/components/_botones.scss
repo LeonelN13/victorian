@@ -1,0 +1,57 @@
+@use "../utilities/variables" as *;
+
+.abrircoleccion a {
+     text-decoration: none;
+     font-size: 18px;
+     background-color: $color-textos;
+     padding: 15px 25px;
+     border-radius: 15px;
+     color: #fff;
+     line-height: 1;
+     top: 50px;
+
+ }
+
+ .abrircompras a {
+     text-align: center;
+     text-decoration: none;
+     font-size: 18px;
+     background-color: white;
+     padding: 15px 25px;
+     border-radius: 15px;
+     color: $color-textos;
+     display: inline-block;
+
+ }
+
+ a:hover {
+     position: relative;
+     animation: mover 4s infinite;
+ }
+
+ @keyframes mover {
+     0% {
+         top: 0px;
+         left: 0px;
+     }
+
+     25% {
+         top: 0px;
+         left: 10px;
+     }
+
+     50% {
+         top: 0px;
+         left: 0px;
+     }
+
+     75% {
+         top: 0px;
+         left: -10px;
+     }
+
+     100% {
+         top: 0px;
+         left: 0px;
+     }
+ }
