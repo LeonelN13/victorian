@@ -35,7 +35,7 @@ body {
 .abrircoleccion a {
   text-decoration: none;
   font-size: 18px;
-  background-color: #A67C65;
+  background-color: rgba(109, 59, 36, 0.7803921569);
   padding: 15px 25px;
   border-radius: 15px;
   color: #fff;
@@ -50,7 +50,7 @@ body {
   background-color: white;
   padding: 15px 25px;
   border-radius: 15px;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
   display: inline-block;
 }
 
@@ -95,7 +95,7 @@ header {
 }
 header h1 {
   /*TITULO*/
-  color: #E7C3AF;
+  color: #C48A7F;
   font-size: 50px;
   font-family: "Playfair Display", serif;
   border: white;
@@ -108,7 +108,7 @@ header nav {
 }
 header nav ul {
   display: flex;
-  gap: 60px;
+  gap: 100px;
   justify-content: space-evenly;
   margin-top: 8px;
 }
@@ -117,9 +117,9 @@ header nav li {
 }
 header nav a {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
-  color: #E7C3AF;
+  color: #C48A7F;
 }
 header nav .boton-catalogo {
   /* BOTON DESPLEGABLE */
@@ -129,7 +129,7 @@ header nav .boton-catalogo {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   text-decoration: none;
-  color: #E7C3AF;
+  color: #C48A7F;
 }
 
 main {
@@ -161,7 +161,7 @@ main .leyenda {
   width: 100%;
   height: 70vh;
   padding: 50px 80px;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
   text-align: left;
   flex: 1;
   justify-content: center;
@@ -171,12 +171,12 @@ main .leyenda h2 {
   font-size: 50px;
   /* reduce el título para que no invada la sección */
   font-weight: 700;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
   margin: 30px;
 }
 main .leyenda h3 {
   font-size: 28px;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
 }
 main .leyenda p {
   font-family: "Montserrat", sans-serif;
@@ -185,7 +185,7 @@ main .leyenda p {
   margin: 0;
   text-align: justify;
   text-justify: inter-word;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
 }
 main nav {
   display: flex;
@@ -212,7 +212,7 @@ img {
 .informacion-personal h2 {
   margin-top: 10px;
   font-size: 35px;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
   text-align: center;
 }
 .informacion-personal p {
@@ -220,7 +220,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-align: center;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
 }
 
 /*---------------------COMIENZO COLECCION-----------------------------*/
@@ -252,7 +252,7 @@ main.oferta .carrousel-ofertas {
   /* nunca más ancho que esto */
   min-width: 280px;
   /* evita que se encoja demasiado en pantallas medianas */
-  width: 100%;
+  width: auto;
   height: 70vh;
   flex: 1;
   justify-content: center;
@@ -269,7 +269,7 @@ main.oferta .img-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #A67C65;
+  color: rgba(109, 59, 36, 0.7803921569);
 }
 
 footer { /*---------------------FOOTER-----------------------------*/
@@ -285,7 +285,7 @@ footer { /*---------------------FOOTER-----------------------------*/
 }
 footer h3 {
   font-size: 20px;
-  color: #E7C3AF;
+  color: #C48A7F;
   justify-content: center;
 }
 footer section {
@@ -298,7 +298,7 @@ footer section p {
   margin-left: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: #E7C3AF;
+  color: #C48A7F;
   margin-top: 15px;
 }
 footer section img {

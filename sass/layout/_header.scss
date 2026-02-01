@@ -5,7 +5,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    background-color: white;
+    background-color: white ; 
     height: 20vh;
     position: sticky;
     justify-content: space-around;
@@ -35,7 +35,7 @@ header {
 
         ul {
             display: flex;
-            gap: 60px;
+            gap: 100px;
             justify-content: space-evenly;
             margin-top: 8px;
 
@@ -47,7 +47,7 @@ header {
 
         a {
             font-family: $fuente-textos;
-            font-size:15px;
+            font-size:18px;
             text-decoration: none;
             color: $color-principal;
         }

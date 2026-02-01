@@ -15,7 +15,7 @@ main.oferta {
         /* nunca más ancho que esto */
         min-width: 280px;
         /* evita que se encoja demasiado en pantallas medianas */
-        width: 100%;
+        width: auto;
         height: 70vh;
         flex: 1;
         justify-content: center;
