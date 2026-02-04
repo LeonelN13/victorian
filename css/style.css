@@ -7,9 +7,13 @@
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100%;
+}
+
+main {
+  flex: 1;
 }
 
 /*COLLECION*/
@@ -81,6 +85,22 @@ a:hover {
     left: 0px;
   }
 }
+/*BOTON EMPRENDEDORES*/
+.compra-mayorista {
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  color: rgba(109, 59, 36, 0.7803921569);
+  display: inline-block;
+  box-shadow: 0 0 1 5px rgba(255, 255, 255, 0.5019607843);
+  top: 80px;
+  width: 200px;
+  margin-top: 10px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -207,7 +227,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 0 0 50%;
 }
 .informacion-personal h2 {
   margin-top: 10px;
@@ -222,6 +241,83 @@ img {
   text-align: center;
   color: rgba(109, 59, 36, 0.7803921569);
 }
+.informacion-personal {
+  /* CARD DE MUESTRAS */
+}
+.informacion-personal .card-quienes-somos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* para responsive */
+  top: 0;
+}
+.informacion-personal .container-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  gap: 5px;
+}
+.informacion-personal .card-muestras {
+  width: 250px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #C48A7F;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.informacion-personal .card-muestras img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  fill: rgba(109, 59, 36, 0.7803921569);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.informacion-personal .card-muestras:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.informacion-personal .card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.informacion-personal .card-muestras:hover .card__content {
+  transform: rotateX(0deg);
+}
+.informacion-personal .card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+.informacion-personal .card-muestras:hover img {
+  scale: 0;
+}
+.informacion-personal .card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
 
 /*---------------------COMIENZO COLECCION-----------------------------*/
 .coleccion {
@@ -232,7 +328,7 @@ img {
   width: auto;
   position: relative;
   flex: 1;
-  background-image: url("../Imagenes/fondo-inicio.jpg");
+  background-image: url("../imagenes/fondo-inicio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,6 +366,101 @@ main.oferta .img-mobile {
   flex-direction: column;
   align-items: center;
   color: rgba(109, 59, 36, 0.7803921569);
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.leyenda-emprendedores {
+  top: 0;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* CARD EMPRENDEDORES */
+.catalogo-emprendedor {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* para responsive */
+  top: 0;
+}
+
+.container-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  gap: 5px;
+}
+
+.card-emprendedores {
+  width: 250px;
+  margin-top: 10px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #C48A7F;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-emprendedores img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  object-fit: cover;
+  fill: rgba(109, 59, 36, 0.7803921569);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-emprendedores:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-emprendedores:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card-emprendedores:hover img {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
 }
 
 footer { /*---------------------FOOTER-----------------------------*/
@@ -426,7 +617,7 @@ footer section img {
   }
   main.informacion-personal h2 {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
   }
   main.informacion-personal .info {
@@ -453,8 +644,7 @@ footer section img {
     margin-top: 0;
     padding: 0 1%;
     max-width: auto;
-    height: 70VH;
-    justify-content: center;
+    min-height: 80vh;
   }
   main .texto-emprendedores h2 {
     font-size: 50px;
@@ -463,23 +653,11 @@ footer section img {
   main .texto-emprendedores p {
     font-size: 25px;
   }
-  .container {
-    position: relative;
-    display: flex;
-    max-width: 70%;
-    justify-content: center;
-    object-fit: contain;
-    box-shadow: gray;
-  }
-  .container img {
-    display: none;
-  }
 }
 @media (max-width: 580px) {
   footer {
-    height: 20%;
+    height: auto;
     justify-content: center;
-    bottom: 0;
   }
   footer h3 {
     font-size: 15px;

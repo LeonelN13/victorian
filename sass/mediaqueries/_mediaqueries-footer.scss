@@ -1,16 +1,11 @@
-     @media (max-width:580px) {
+@media (max-width:580px) {
 
-         footer {
-             height: 20%;
-             justify-content: center;
-             bottom: 0;
+  footer {
+      height: auto;
+      justify-content: center;
+  }
 
-             h3 {
-                 font-size: 15px;
-
-             }
-
-         }
-
-
-     }
+  footer h3 {
+      font-size: 15px;
+  }
+}

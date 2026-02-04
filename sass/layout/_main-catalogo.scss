@@ -6,16 +6,16 @@
 
 .coleccion {
 
-    display: flex;
-    align-items: center;
-    /* centra verticalmente el contenido (ajustable) */
-    height: 80%;
-    width: auto;
-    position: relative;
-    flex: 1;
+        display: flex;
+        align-items: center;
+        /* centra verticalmente el contenido (ajustable) */
+        height: 80%;
+        width: auto;
+        position: relative;
+        flex: 1;
 
 
-    background-image: url("../Imagenes/fondo-inicio.jpg");
+    background-image: url("../imagenes/fondo-inicio.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
